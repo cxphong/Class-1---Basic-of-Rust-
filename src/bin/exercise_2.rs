@@ -3,16 +3,21 @@ use regex::Regex;
 fn main() {
     let mut s1 = String::new();
     let mut s2 = String::new();
+
+    println!("Enter the first string: ");
     std::io::stdin().read_line(&mut s1);
+    
+    println!("Enter the second string: ");
     std::io::stdin().read_line(&mut s2);
+
     s1.pop();
     s2.pop();
 
-    let mut number_occurennce = count_occurence(&s1, &s2);
-    println!("'{}' appears {} times", s2, number_occurennce);
+    let mut number_occurence = count_occurence(&s1, &s2);
+    println!("'{}' appears {} times", s2, number_occurence);
 
-    number_occurennce = count_occurrence_using_regrex(&s1, &s2);
-    println!("'{}' appears {} times", s2, number_occurennce);
+    number_occurence = count_occurrence_using_regrex(&s1, &s2);
+    println!("'{}' appears {} times", s2, number_occurence);
 
 }
 
