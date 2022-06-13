@@ -1,0 +1,17 @@
+[package]
+name = "lab-01"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1"
+
+[[bin]]
+name = "exercise_1"
+src = "src/exercise_1.rs"
+
+[[src]]
+name = "exercise_2"
+src = "src/exercise_2.rs"
